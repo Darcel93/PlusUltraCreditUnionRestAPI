@@ -1,5 +1,6 @@
 class User:
-    def __init__(self, firstName, lastName, email, username, password, accountNumber = "", amount = 1000):
+    def __init__(self, firstName, lastName, email, username, password, accountNumber = "", amount = 1000, profilepic = ""):
+        self.profilepic = profilepic
         self.firstName = firstName
         self.lastName = lastName
         self.username = username
