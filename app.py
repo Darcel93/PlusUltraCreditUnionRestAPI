@@ -18,7 +18,9 @@ def test2():
 def login():
     user = request.get_json()['Username']
     passkey = request.get_json()['Password']
-    user_service.login(user, passkey)
+    results = user_service.login(user, passkey)
+    print(results.amount)
+    return json.dumps(str(results.__dict__))
 
 @app.route("/register", methods = ["POST"])
 def register():

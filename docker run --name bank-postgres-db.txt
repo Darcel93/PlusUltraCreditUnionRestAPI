@@ -1,0 +1,9 @@
+docker run --name bank-postgres-db \
+  -e POSTGRES_USER=darcel93 \
+  -e POSTGRES_PASSWORD=password123  \
+  -e POSTGRES_DB=bank_db \
+  -p 5431:5432 \
+  -d postgres
+
+
+docker exec -it bank-postgres-db psql -U darcel93 -d bank_db  
