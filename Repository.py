@@ -8,8 +8,8 @@ conn = psycopg.connect(
     host="localhost",
     port=5431,
     dbname="bank_db",
-    user="darcel93",
-    password= "password123",
+    user="",
+    password= "",
     connect_timeout = 5
 )
 
