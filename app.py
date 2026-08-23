@@ -16,20 +16,29 @@ def test2():
 
 @app.route("/Login", methods = ["POST"])
 def login():
-    user = request.get_json()['Username']
-    passkey = request.get_json()['Password']
-    results = user_service.login(user, passkey)
-    print(results.amount)
-    return json.dumps(str(results.__dict__))
+    try:
+        user = request.get_json()['Username']
+        passkey = request.get_json()['Password']
+        results = user_service.login(user, passkey)
+        print(results.amount)
+        return jsonify(results.__dict__)
+    except:
+        return jsonify({
+            "status_code" : 401,
+            "error_message" : "Username or Password is incorrect"
+
+        }), 401
+
 
 @app.route("/register", methods = ["POST"])
 def register():
+    profile_pic = request.get_json()['Profile_pic']
     firstname = request.get_json()['Firstname']
     lastname = request.get_json()['Lastname']
     username = request.get_json()['Username']
     password = request.get_json()['Password']
     email = request.get_json()['Email']
-    user_service.register(firstname,lastname,email,username,password)
+    user_service.register(profile_pic, firstname,lastname,email,username,password)
     return "New User Saved"
 
 @app.route("/allusers", methods = ["GET"])

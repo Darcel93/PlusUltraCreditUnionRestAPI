@@ -48,4 +48,23 @@ INSERT INTO users(
     'SG2344456'
 );
 
+
+INSERT INTO users(
+    profile_pic_url,
+    first_name,
+    last_name,
+    user_name,
+    password,
+    email,
+    account_number
+) VALUES (
+    'https://jujutsu-kaisen.fandom.com/wiki/Satoru_Gojo?file=Satoru_quotes_I_alone_am_the_honored_one_%28Anime%29.png',
+    'Saturo',
+    'Gojo',
+    'Honored_One',
+    'Limitless1',
+    'gojo.saturo1@jjkmail.com',
+    'SG2344457'
+);
+
 DROP TABLE users;
