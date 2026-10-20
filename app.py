@@ -32,12 +32,12 @@ def login():
 
 @app.route("/register", methods = ["POST"])
 def register():
-    profile_pic = request.get_json()['Profile_pic']
-    firstname = request.get_json()['Firstname']
-    lastname = request.get_json()['Lastname']
-    username = request.get_json()['Username']
-    password = request.get_json()['Password']
-    email = request.get_json()['Email']
+    profile_pic = request.files["file"]
+    firstname = request.form.get('Firstname')
+    lastname = request.form.get('Lastname')
+    username = request.form.get('Username')
+    password = request.form.get('Password')
+    email = request.form.get('Email')
     user_service.register(profile_pic, firstname,lastname,email,username,password)
     return "New User Saved"
 

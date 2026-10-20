@@ -1,0 +1,21 @@
+First Name Last Name Account Number is: #Account Number
+Naruto Uzumaki Account Number is: #583104927
+Sasuke Uchiha Account Number is: #741629305
+Sakura Haruno Account Number is: #296815473
+Ichigo Kurosaki Account Number is: #815374602
+Rukia Kuchiki Account Number is: #437920168
+Goku Son Account Number is: #629481753
+Vegeta Briefs Account Number is: #174305826
+Tanjiro Kamado Account Number is: #903761245
+Nezuko Kamado Account Number is: #358214690
+Eren Yeager Account Number is: #762590314
+Mikasa Ackerman Account Number is: #481736925
+Levi Ackerman Account Number is: #235908471
+Edward Elric Account Number is: #694127538
+Alphonse Elric Account Number is: #520843176
+Light Yagami Account Number is: #847316209
+Misa Amane Account Number is: #319675842
+Izuku Midoriya Account Number is: #956402731
+Katsuki Bakugo Account Number is: #408159627
+Satoru Gojo Account Number is: #671284953
+Yuji Itadori Account Number is: #124937586
